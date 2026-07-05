@@ -199,8 +199,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="border-t border-zinc-200 pt-8 text-sm text-zinc-500 dark:border-zinc-800 dark:text-zinc-400">
-          © {new Date().getFullYear()} Khalid Siyanbola. Built with Next.js and
-          Tailwind CSS.
+          © {new Date().getFullYear()} Khalid Siyanbola.
         </footer>
       </main>
     </div>
