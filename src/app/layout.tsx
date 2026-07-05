@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolio-kohl-ten-61.vercel.app"),
   title: "Khalid Siyanbola — Full-Stack Developer",
   description:
     "Full-stack developer building marketplaces, real-time social apps, and fintech tools across Go, Node.js, React, and React Native.",
