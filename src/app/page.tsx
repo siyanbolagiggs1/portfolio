@@ -7,11 +7,11 @@ const skills = [
   },
   {
     group: "Frontend",
-    items: ["React", "Next.js", "React Native", "Tailwind CSS", "shadcn/ui", "Redux Toolkit"],
+    items: ["React", "Next.js", "React Native", "Tailwind CSS", "shadcn/ui", "Redux Toolkit", "Angular (fundamentals)"],
   },
   {
     group: "Backend",
-    items: ["Node.js", "Express", "Go (Gin)", "REST API design", "Microservices"],
+    items: ["Node.js", "Express", "Go (Gin)", "REST API design", "Microservices", "JSON Schema validation (Ajv, Joi, Zod)"],
   },
   {
     group: "Data & Infra",
@@ -21,6 +21,14 @@ const skills = [
     group: "Real-time & Payments",
     items: ["Socket.io", "Server-Sent Events (SSE)", "Stripe (Payment Intents + Connect)", "JWT / OAuth"],
   },
+  {
+    group: "Automation & Integrations",
+    items: ["n8n", "HubSpot CRM", "GoHighLevel", "Webhook integrations"],
+  },
+  {
+    group: "Engineering Practices",
+    items: ["Git & collaborative code review", "Automated testing", "Production troubleshooting"],
+  },
 ];
 
 const projects = [
@@ -29,16 +37,16 @@ const projects = [
     role: "Solo Full-Stack Developer",
     period: "2026-Present",
     description:
-      "A social engagement marketplace where businesses fund repost campaigns and everyday promoters earn money reposting on Instagram and Twitter/X. Built end-to-end: influence scoring, fraud detection, Stripe Connect payouts, and real-time notifications over SSE.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Go", "Gin", "MongoDB", "Redis", "Stripe", "Docker"],
+      "A social engagement marketplace where businesses fund repost campaigns and everyday promoters earn money reposting on Instagram and Twitter/X. Built end-to-end: influence scoring, fraud detection, Stripe Connect payouts, real-time notifications over SSE, and n8n automation workflows syncing new signups into HubSpot CRM plus scheduled uptime monitoring with email alerting. Deployed with Docker and CI/CD to Fly.io and Vercel.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Go", "Gin", "MongoDB", "Redis", "Stripe", "Docker", "n8n", "HubSpot"],
     link: "https://pulse-murex-five.vercel.app/",
-    linkLabel: "Live demo",
+    linkLabel: "Live app",
   },
   {
     name: "JustTalk",
     role: "Full-Stack Developer",
     description:
-      "Full-stack developer on a social messaging and voice-casts app. Contributed across seven Node.js/Express/TypeScript microservices (auth, identity, casts, messaging, search, subscriptions, shared data models) and the React Native mobile client — real-time chat over Socket.io, JWT + Google OAuth, referral system, and media pipelines with ffmpeg and Google Cloud Storage.",
+      "Full-stack developer on a social messaging and voice-casts app. Contributed across seven Node.js/Express/TypeScript microservices (auth, identity, casts, messaging, search, subscriptions, shared data models) and the React Native mobile client — real-time chat over Socket.io, JWT + Google OAuth, referral system and email verification flows, activity tracking, and media pipelines with ffmpeg and Google Cloud Storage.",
     stack: ["Node.js", "Express", "TypeScript", "MongoDB", "Socket.io", "React Native", "Google Cloud Storage"],
     link: "https://justtalkapp.com/",
     linkLabel: "App site (App Store & Google Play)",
@@ -47,10 +55,10 @@ const projects = [
     name: "expendit",
     role: "Open-Source Contributor",
     description:
-      "Open-source expense-tracking app. Shipped Google Sign-In, JWT/auth fixes, expense CRUD fixes, Docker/CORS configuration fixes, and an AI-powered financial document processing and transaction-insights feature.",
+      "Open-source expense-tracking app. Shipped Google Sign-In, schema-based input/password validation, a JWT duplicate-token fix, expense CRUD fixes, Docker/CORS configuration fixes, replaced hardcoded URLs and SMTP settings with configurable environment variables, and an AI-powered financial document processing and transaction-insights feature.",
     stack: ["Next.js", "TypeScript", "Go"],
-    link: "https://github.com/cuesoftinc/expendit",
-    linkLabel: "GitHub repository",
+    link: "https://expendit.cuesoft.io/",
+    linkLabel: "Live demo",
   },
 ];
 
